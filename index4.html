@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VotingVN</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/aos.js"></script>
+        <script type="text/javascript" src="js/slick.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/aos.css" />
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+        <link rel="stylesheet" type="text/css" href="css/slick.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body class="vote_detail_view">
+    <div class="wrapper">    
+        <div id="header">
+            <div class="container">
+                <div class="headers_content">
+                    <div class="logo" data-aos="fade-right" data-aos-duration="1500">
+                        <a href="#"><img src="images/logo.png"></a>
+                    </div>
+                    <div class="navigation" data-aos="fade-left" data-aos-duration="1500">
+                        <span class="toggle_menu"></span>
+                        <div class="menu">
+                            <ul>
+                                <li class="level0"><a  href="#">Trang chủ </a></li>
+                                <li class="level0" ><a href="#">Giới thiệu</a></li>
+                                <li class="level0"><a  href="#"> BXH</a></li>
+                                <li class="level0"><a  href="#">Liên hệ </a></li>
+                            </ul>
+                        </div>
+                        <script>
+                            jQuery(".toggle_menu").click(function(){
+                                jQuery(this).next().slideToggle("");
+                            });
+                        </script>
+                    </div>
+                </div>  
+            </div> 
+        </div><!--end #header-->
+
+        <div class="maincontainer">
+            <div class="container">
+                <div class="detail_slider">
+                    <div class="view_content_slider" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="item">
+                            <a href="#"><img src="images/hhmt1.jpg"/></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="images/hhmt1.jpg"/></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="images/hhmt1.jpg"/></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="images/hhmt1.jpg"/></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="images/hhmt1.jpg"/></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="images/hhmt1.jpg"/></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="images/hhmt1.jpg"/></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="images/hhmt1.jpg"/></a>
+                        </div>
+                    </div>
+                    <script>
+                        $('.view_content_slider').slick({
+                            centerMode: true,
+                            slidesToShow: 5,
+                            autoplay: true,
+                            autoplaySpeed: 5000,
+                            responsive: [
+                                {
+                                    breakpoint: 1025,
+                                    settings: {
+                                        arrows: false,
+                                        slidesToShow: 3
+                                    }
+                                },
+                                {
+                                    breakpoint: 415,
+                                    settings: {
+                                        arrows: false,
+                                        slidesToShow: 1
+                                    }
+                                }
+                            ]
+                        });
+                    </script>
+                </div>
+
+                <div class="detail_view" data-aos="fade-up" data-aos-duration="500"> 
+                    <div class="voting_info">
+                        <div class="media" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="media_slider">
+                                <div class="item">
+                                    <a href="#"><img src="images/hhmt1.jpg"/></a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="images/hhmt2.jpg"/></a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="images/hhmt3.jpg"/></a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="images/hhmt4.jpg"/></a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="images/hhmt5.jpg"/></a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="images/hhmt6.jpg"/></a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="images/hhmt7.jpg"/></a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="images/hhmt8.jpg"/></a>
+                                </div>
+                            </div>
+                            <script>
+                                $('.media_slider').slick({
+                                    dots: false,
+                                    arrows: true,
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1,
+                                });
+                            </script>
+                        </div>
+                        <div class="information">
+                            <div class="box_info" data-aos="fade-left" data-aos-duration="1000">
+                                <div class="field_item name">
+                                    <span class="label">Họ tên:</span>  
+                                    <span class="value">Nguyễn Thị Minh Trang</span>
+                                </div>
+                                <div class="field_item sbd">
+                                    <span class="label">Số báo danh:</span>
+                                    <span class="value">232</span>
+                                </div>
+                                <div class="field_item birth">
+                                    <span class="label">Sinh nhật:</span>
+                                    <span class="value">24/11/2002</span>
+                                </div>
+                                <div class="field_item address">
+                                    <span class="label">Quê quán:</span>
+                                    <span class="value">Bắc Ninh</span>
+                                </div>
+                                <div class="field_item other">
+                                    <span class="label">Cân nặng - Chiều cao:</span>
+                                    <span class="value">55kg - 1m68</span>
+                                </div>
+                                <div class="field_item measure">
+                                    <span class="label">Số đo ba vòng:</span>
+                                    <span class="value">82 - 65 - 93</span>
+                                </div>
+                                <div class="field_item voting_points">
+                                    <span class="label">Điểm bình chọn:</span>
+                                    <span class="value">510</span>
+                                </div>                     
+                            </div>
+                            <div class="box_action" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="action"><a class="btn" href="#">Bình chọn qua SMS</a></div>
+                                <div class="action"><a class="btn" href="#">Bình chọn qua ví Momo</a></div>
+                                <div class="action"><a class="btn" href="#">Bình chọn qua Facebook</a></div>
+                                <div class="action"><a class="btn" href="#">Chia sẻ</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="voting_history">
+                        <h2 class="title_heading title_left" data-aos="fade-up" data-aos-duration="1000">Danh sách thí sinh</h2>
+                        <div class="list_hosting" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="content_list">
+                                <div class="head">
+                                    <span class="stt">STT</span>
+                                    <span class="votingid">Mã người bình chọn</span>
+                                    <span class="time">Thời gian</span>
+                                </div>
+                                <div class="content">
+                                    <div class="item checked">
+                                        <span class="stt"><span>1</span></span>
+                                        <span class="votingid">01d144b1018667b</span>
+                                        <span class="time">20/11/2020 19:59</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="stt"><span>2</span></span>
+                                        <span class="votingid">01d144b1018667b</span>
+                                        <span class="time">20/11/2020 19:59</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="stt"><span>3</span></span>
+                                        <span class="votingid">01d144b1018667b</span>
+                                        <span class="time">20/11/2020 19:59</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="stt"><span>4</span></span>
+                                        <span class="votingid">01d144b1018667b</span>
+                                        <span class="time">20/11/2020 19:59</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="stt"><span>5</span></span>
+                                        <span class="votingid">01d144b1018667b</span>
+                                        <span class="time">20/11/2020 19:59</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="stt"><span>6</span></span>
+                                        <span class="votingid">01d144b1018667b</span>
+                                        <span class="time">20/11/2020 19:59</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="stt"><span>7</span></span>
+                                        <span class="votingid">01d144b1018667b</span>
+                                        <span class="time">20/11/2020 19:59</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="stt"><span>8</span></span>
+                                        <span class="votingid">01d144b1018667b</span>
+                                        <span class="time">20/11/2020 19:59</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="stt"><span>9</span></span>
+                                        <span class="votingid">01d144b1018667b</span>
+                                        <span class="time">20/11/2020 19:59</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="home_companion">
+                    <h2 class="title_heading title_center" data-aos="fade-up" data-aos-duration="1000">Đơn vị bảo trợ</h2>
+                    <div class="item">
+                        <ul>
+                            <li data-aos="fade-up" data-aos-duration="500"><img src="images/vtv1.jpg"/></li>
+                            <li data-aos="fade-up" data-aos-duration="800"><img src="images/vtv3.jpg"/></li>
+                            <li data-aos="fade-up" data-aos-duration="1100"><img src="images/vtv6.jpg"/></li>
+                            <li data-aos="fade-up" data-aos-duration="1400"><img src="images/vtvb.jpg"/></li>
+                            <li data-aos="fade-up" data-aos-duration="1800"><img src="images/tnvn.jpg"/></li>
+                            <li data-aos="fade-up" data-aos-duration="2100"><img src="images/tnvmt.jpg"/></li>
+                            <li data-aos="fade-up" data-aos-duration="2400"><img src="images/tn.jpg"/></li>
+                            <li data-aos="fade-up" data-aos-duration="2700"><img src="images/vaa.jpg"/></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer_content">
+                <div class="container">
+                    <div class="copyright">
+                        <p>Bản quyền © 2018 bởi NEO JSC. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll_top">
+            <img src="images/backtop.png"/>
+        </div>
+        <script>
+            $(window).scroll(function(){ 
+                if ($(this).scrollTop() > 500) { 
+                    $('.scroll_top').fadeIn(); 
+                } else { 
+                    $('.scroll_top').fadeOut(); 
+                } 
+            }); 
+            $('.scroll_top').click(function(){ 
+                $("html, body").animate({ scrollTop: 0 }, 700); 
+                return false; 
+            }); 
+        </script>
+
+        <script>
+            var t = 0;
+            $(document).scroll(function () {
+                if ($(this).scrollTop() >= 84) {
+                    $("#header").addClass("scrolled");
+                    $("body").addClass("is_fixed");
+                    var e = $(this).scrollTop();
+                    e > t ? $("#header").addClass("header-fixed") : $("#header").removeClass("header-fixed"), (t = e);
+                } 
+                else {
+                    $("#header").removeClass("scrolled");
+                    $("body").removeClass("is_fixed");
+                }
+            });
+        </script>
+        
+        <script>
+            AOS.init();
+        </script>
+    </div>    
+    </body>
+</html>
